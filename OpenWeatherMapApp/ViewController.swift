@@ -11,7 +11,7 @@ import Alamofire
 
 class ViewController: UIViewController {
     
-    let BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
+    let BASE_URL = "http://api.openweathermap.org/data/2.5/weather?q=Charlotte,us&units=imperial&appid=a10dbba30194931c77982e032457ec48"
     let API_KEY = "a10dbba30194931c77982e032457ec48"
     
     let data = AppData().cities
@@ -27,11 +27,18 @@ class ViewController: UIViewController {
         print(countries)
         
         let parameters: Parameters = [
-            "cities" : data
-        ]
-        
-        
-        //        AF.request("https://my-json-server.typicode.com/typicode/demo/posts", method: .get, parameters: parameters, encoding: JSONEncoding.default, headers: nil, interceptor: nil)
+            "q": "\(data) \(countries)",
+        "units": "imperial",
+        "appid": API_KEY]
+
+        AF.request(BASE_URL, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON(completionHandler: {(response) in
+            if response.result.isSuccess {
+                print("success")
+                print(response.result.value!)
+            } else {
+                print("error")
+            }
+        })
         
         
     }
