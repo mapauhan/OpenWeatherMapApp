@@ -9,6 +9,9 @@
 import UIKit
 
 class CurrentWeatherViewController: UIViewController {
+    
+    var response: [String:Any] = [:]
+    
 
   
     override func viewDidLoad() {
