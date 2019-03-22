@@ -14,6 +14,7 @@
 		B92A5FC02243176B003999B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B92A5FBF2243176B003999B0 /* Assets.xcassets */; };
 		B92A5FC32243176B003999B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92A5FC12243176B003999B0 /* LaunchScreen.storyboard */; };
 		B92A5FCB22431A8B003999B0 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92A5FCA22431A8B003999B0 /* AppData.swift */; };
+		B92A5FCD22446B49003999B0 /* CurrentWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92A5FCC22446B49003999B0 /* CurrentWeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B92A5FC22243176B003999B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B92A5FC42243176B003999B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B92A5FCA22431A8B003999B0 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppData.swift; path = ../../AppData.swift; sourceTree = "<group>"; };
+		B92A5FCC22446B49003999B0 /* CurrentWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				B92A5FBF2243176B003999B0 /* Assets.xcassets */,
 				B92A5FC12243176B003999B0 /* LaunchScreen.storyboard */,
 				B92A5FC42243176B003999B0 /* Info.plist */,
+				B92A5FCC22446B49003999B0 /* CurrentWeatherViewController.swift */,
 			);
 			path = OpenWeatherMapApp;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				B92A5FBB22431767003999B0 /* ViewController.swift in Sources */,
 				B92A5FB922431767003999B0 /* AppDelegate.swift in Sources */,
 				B92A5FCB22431A8B003999B0 /* AppData.swift in Sources */,
+				B92A5FCD22446B49003999B0 /* CurrentWeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

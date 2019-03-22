@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Current Weather -->
         <scene sceneID="ku3-nW-bEH">
             <objects>
-                <viewController id="5tt-1Y-yev" sceneMemberID="viewController">
+                <viewController title="Current Weather " id="5tt-1Y-yev" customClass="CurrentWeatherViewController" customModule="OpenWeatherMapApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qPe-G7-gN0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,7 +184,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <accessibility key="accessibilityConfiguration" identifier="Current Weather"/>
                         <viewLayoutGuide key="safeArea" id="hLP-G7-NPm"/>
                     </view>
                 </viewController>

@@ -5,6 +5,36 @@
 	<key>logFormatVersion</key>
 	<integer>9</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>663930F5-1C6A-45C1-8342-EB5A881F31CF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>663930F5-1C6A-45C1-8342-EB5A881F31CF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>OpenWeatherMapApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>OpenWeatherMapApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build OpenWeatherMapApp</string>
+			<key>timeStartedRecording</key>
+			<real>574910412.73671198</real>
+			<key>timeStoppedRecording</key>
+			<real>574910418.49625099</real>
+			<key>title</key>
+			<string>Build OpenWeatherMapApp</string>
+			<key>uniqueIdentifier</key>
+			<string>663930F5-1C6A-45C1-8342-EB5A881F31CF</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
