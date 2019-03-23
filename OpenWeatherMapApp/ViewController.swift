@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     }
     
 }
-
+    
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // what country?
@@ -66,7 +66,7 @@ extension ViewController: UITableViewDataSource {
         let citiesInCountry = data[country]
         //what city?
         let city = citiesInCountry![indexPath.row] //prints data to tableview
-        
+
         cell.textLabel?.text = city
         
         //cell.textLabel?.text = "\(countries) Section:\(indexPath.section) Row:\(indexPath.row)"
