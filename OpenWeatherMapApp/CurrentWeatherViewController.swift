@@ -11,6 +11,7 @@ import Alamofire
 
 class CurrentWeatherViewController: UIViewController {
     
+    @IBOutlet weak var lblCity: UILabel!
     @IBOutlet weak var lblTemp: UILabel!
     @IBOutlet weak var lblHumy: UILabel!
     @IBOutlet weak var lblDescrip: UILabel!
@@ -30,19 +31,20 @@ class CurrentWeatherViewController: UIViewController {
         super.viewDidLoad()
         
         let url = BASE_URL! //?? ""
-        let city = selectedCity! //?? ""
+        //let city = selectedCity! //?? ""
         let apiKey = API_KEY! //?? ""
         let country = selectedCountry! //?? ""
-        
-        let uri = "\(String(describing: url))?q=\(String(describing: city)),\(String(describing: country))&APIKEY=\(String(describing: apiKey))"
+        let city = selectedCity!.replacingOccurrences(of: " ", with: "%20")
+        let uri = "\(String(describing: url))?q=\(String(describing: city)),\(String(describing: country))&units=imperial&APIKEY=\(String(describing: apiKey))"
         
         
         print(uri)
         
-        AF.request(uri, method: HTTPMethod.post, encoding: URLEncoding.default).responseJSON { response in
+        AF.request(uri, method: HTTPMethod.post, encoding: URLEncoding.default ).responseJSON { response in
             
             print(response.result.value)
             let data = response.result.value as? [String: Any]
+            self.lblCity.text = self.selectedCity!
             if data != nil {
                 let selection = weather(data!)
                 self.lblTemp.text = selection.temperature
@@ -52,7 +54,7 @@ class CurrentWeatherViewController: UIViewController {
                 self.lblCloud.text = selection.cloudy
                 self.lblSpeed.text = selection.speed
                 self.lblVisib.text = selection.visibility
- //               self.lblDescrip.text = selection.description
+                self.lblDescrip.text = selection.description
             }
         }
 

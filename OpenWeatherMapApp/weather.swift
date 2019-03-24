@@ -17,15 +17,16 @@ class weather {
     var cloudy: String
     var speed: String
     var visibility: String
-//    var description: String
+    var description: String
     
     init(_ data:[String:Any]) {
         
-        let main = data["main"] as! [String:Any]
+        let main = data["main"] as! NSDictionary
         let clouds = data["clouds"] as! [String:Any]
         let wind = data["wind"] as! [String:Any]
-        let weatherArray = data["weather"] as! [Any]
-        let weather = weatherArray as! NSDictionary
+        let weatherArray = data["weather"] as! NSArray
+        let weather = weatherArray[0] as! [String:Any]
+        
         self.temperature = String(Double(truncating: main["temp"] as! NSNumber))
         self.low = String(Double(truncating: main["temp_min"] as! NSNumber))
         self.high = String(Double(truncating: main["temp_max"] as! NSNumber))
@@ -33,7 +34,7 @@ class weather {
         self.cloudy = String(Int(truncating: clouds["all"] as! NSNumber))
         self.speed = String(Double(truncating: wind["speed"] as! NSNumber))
         self.visibility = String(Double(truncating: data["visibility"] as! NSNumber))
- //       self.description = String(weather["description"] as! NSString)
+        self.description = String(weather["description"] as! NSString).uppercased()
 
     }
 }
