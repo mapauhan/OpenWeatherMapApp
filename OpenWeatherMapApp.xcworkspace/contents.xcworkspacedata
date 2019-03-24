@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/lore/projects/swift/OpenWeatherMapApp/OpenWeatherMapApp/AppData.swift">
+   </FileRef>
+   <FileRef
       location = "group:OpenWeatherMapApp.xcodeproj">
    </FileRef>
    <FileRef

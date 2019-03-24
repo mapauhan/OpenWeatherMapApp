@@ -12,6 +12,13 @@ import Alamofire
 class CurrentWeatherViewController: UIViewController {
     
     @IBOutlet weak var lblTemp: UILabel!
+    @IBOutlet weak var lblHumy: UILabel!
+    @IBOutlet weak var lblDescrip: UILabel!
+    @IBOutlet weak var lblVisib: UILabel!
+    @IBOutlet weak var lblSpeed: UILabel!
+    @IBOutlet weak var lblCloud: UILabel!
+    @IBOutlet weak var lblHigh: UILabel!
+    @IBOutlet weak var lblLow: UILabel!
     
     var selectedCountry: String?
     var selectedCity: String?
@@ -21,12 +28,6 @@ class CurrentWeatherViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        let parameters: Parameters = [
-//            "country": self.selectedCountry,
-//            "city": self.selectedCity,
-//            "app_key": self.API_KEY
-//        ]
         
         let url = BASE_URL! //?? ""
         let city = selectedCity! //?? ""
@@ -38,21 +39,23 @@ class CurrentWeatherViewController: UIViewController {
         
         print(uri)
         
-        AF.request(uri, method: HTTPMethod.post).responseJSON { response in
+        AF.request(uri, method: HTTPMethod.post, encoding: URLEncoding.default).responseJSON { response in
             
             print(response.result.value)
-            
-            let data = response.result.value as! [String: Any]
-            
-            let main = data["main"] as! [String:Any]
-            
-            let temp = main["temp"] as! NSNumber
-            
-            self.lblTemp.text = String(Double(truncating: temp))
-            print(temp)
-            
+            let data = response.result.value as? [String: Any]
+            if data != nil {
+                let selection = weather(data!)
+                self.lblTemp.text = selection.temperature
+                self.lblLow.text = selection.low
+                self.lblHigh.text = selection.high
+                self.lblHumy.text = selection.humidity
+                self.lblCloud.text = selection.cloudy
+                self.lblSpeed.text = selection.speed
+                self.lblVisib.text = selection.visibility
+ //               self.lblDescrip.text = selection.description
+            }
         }
-        //a10dbba30194931c77982e032457ec48
+
     }
     
 
