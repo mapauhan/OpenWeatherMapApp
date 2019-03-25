@@ -15,6 +15,8 @@
 		B92A5FC32243176B003999B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92A5FC12243176B003999B0 /* LaunchScreen.storyboard */; };
 		B92A5FCB22431A8B003999B0 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92A5FCA22431A8B003999B0 /* AppData.swift */; };
 		B92A5FCD22446B49003999B0 /* CurrentWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92A5FCC22446B49003999B0 /* CurrentWeatherViewController.swift */; };
+		B974EA462245DB4A007D6C0B /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B974EA452245DB4A007D6C0B /* Weather.swift */; };
+		B9F7971A224950F200844C04 /* WeatherForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F79719224950F200844C04 /* WeatherForecastViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B92A5FC42243176B003999B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B92A5FCA22431A8B003999B0 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppData.swift; path = ../../AppData.swift; sourceTree = "<group>"; };
 		B92A5FCC22446B49003999B0 /* CurrentWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewController.swift; sourceTree = "<group>"; };
+		B974EA452245DB4A007D6C0B /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		B9F79719224950F200844C04 /* WeatherForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				B92A5FC12243176B003999B0 /* LaunchScreen.storyboard */,
 				B92A5FC42243176B003999B0 /* Info.plist */,
 				B92A5FCC22446B49003999B0 /* CurrentWeatherViewController.swift */,
+				B974EA452245DB4A007D6C0B /* Weather.swift */,
+				B9F79719224950F200844C04 /* WeatherForecastViewController.swift */,
 			);
 			path = OpenWeatherMapApp;
 			sourceTree = "<group>";
@@ -216,8 +222,10 @@
 			files = (
 				B92A5FBB22431767003999B0 /* ViewController.swift in Sources */,
 				B92A5FB922431767003999B0 /* AppDelegate.swift in Sources */,
+				B9F7971A224950F200844C04 /* WeatherForecastViewController.swift in Sources */,
 				B92A5FCB22431A8B003999B0 /* AppData.swift in Sources */,
 				B92A5FCD22446B49003999B0 /* CurrentWeatherViewController.swift in Sources */,
+				B974EA462245DB4A007D6C0B /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,15 +7,17 @@
 //
 
 import UIKit
-import Alamofire
 
 class ViewController: UIViewController {
     
-    let BASE_URL = "http://api.openweathermap.org/data/2.5/weather?q=Charlotte,us&units=imperial&appid=a10dbba30194931c77982e032457ec48"
-    let API_KEY = "a10dbba30194931c77982e032457ec48"
+//    let BASE_URL = "http://api.openweathermap.org/data/2.5/weather?q=Charlotte,us&units=imperial&appid=a10dbba30194931c77982e032457ec48"
+//    let API_KEY = "a10dbba30194931c77982e032457ec48"
     
     let data = AppData().cities
     var countries = [String]() //THIS IS HOW YOU GET A KEY FROM A DICTIONARY
+    
+    var selectedCountry: String?
+    var selectedCity: String?
     
     
     override func viewDidLoad() {
@@ -26,49 +28,55 @@ class ViewController: UIViewController {
         
         print(countries)
         
-        let parameters: Parameters = [
-            "q": "\(data) \(countries)",
-        "units": "imperial",
-        "appid": API_KEY]
+//        let parameters: Parameters = [
+//            "q": "\(data) \(countries)", //q=city,country
+//        "units": "imperial",
+//        "appid": API_KEY]
 
-        AF.request(BASE_URL, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON(completionHandler: {(response) in
-            if response.result.isSuccess {
-                print("success")
-                print(response.result.value!)
-            } else {
-                print("error")
-            }
-        })
+//        AF.request(BASE_URL, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON(completionHandler: {(response) in
+//            if response.result.isSuccess {
+//                print("success")
+//                print(response.result.value!)
+//            } else {
+//                print("error")
+//            }
+//        })
         
         
     }
 
         //data divided into two (2) sections Country and City
         func numberOfSections(in tableView: UITableView) -> Int {
-            return 2
+            
+            return countries.count
         }
-        
-        func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-            let label = UILabel()
-            label.text = self.countries.description
-            label.backgroundColor = UIColor.darkGray
-            return label
-        }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let country = countries[section]
+        let label = UILabel()
+        label.backgroundColor = UIColor.lightGray
+        return country
     }
+    
+}
 
     
     extension ViewController: UITableViewDataSource {
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return countries.count
+            let country = countries[section]
+            return data[country]!.count
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             //this is where data is added to the cell
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-            let countries = self.countries[indexPath.row] //prints data to tableview
-            cell.textLabel?.text = countries
+            let country = self.countries[indexPath.section]//prints data to tableview
+            let cities = data[country]
+            let city = cities![indexPath.row]
             
-            cell.textLabel?.text = "\(countries) Section:\(indexPath.section) Row:\(indexPath.row)"
+            cell.textLabel?.text = city
+            
+           // cell.textLabel?.text = "\(countries) Section:\(indexPath.section) Row:\(indexPath.row)"
             
             return cell
         }
@@ -76,10 +84,24 @@ class ViewController: UIViewController {
     }
     
     extension ViewController: UITableViewDelegate {
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            
+            selectedCountry = countries[indexPath.section] //what country
+            
+            let cityData = data[selectedCountry!]
+            
+            selectedCity = cityData![indexPath.row]
+            
+        performSegue(withIdentifier: "currentWeatherSegue", sender: nil)
+    }
+        
+        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "currentWeatherSegue" {
                 let destinationVC = segue.destination as! CurrentWeatherViewController
-                
+                destinationVC.selectedCity = self.selectedCity
+                destinationVC.selectedCountry = self.selectedCountry
+
             }
     }
 

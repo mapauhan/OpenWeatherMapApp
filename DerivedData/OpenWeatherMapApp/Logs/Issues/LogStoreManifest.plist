@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>5CD0F78D-686C-49A0-9113-C8119FA41A85</key>
+		<key>37375B36-6FBE-4DBF-95EA-A1C51674114F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,21 +15,21 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>5CD0F78D-686C-49A0-9113-C8119FA41A85.xcactivitylog</string>
+			<string>37375B36-6FBE-4DBF-95EA-A1C51674114F.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
 			<string>Alamofire-fasaqmdyhmrowqcsfgrrayfsocjd</string>
 			<key>timeStartedRecording</key>
-			<real>574918832.40881896</real>
+			<real>575243649.66248703</real>
 			<key>timeStoppedRecording</key>
-			<real>574918856.13602197</real>
+			<real>575243709.04051304</real>
 			<key>title</key>
 			<string>Build target Alamofire</string>
 			<key>uniqueIdentifier</key>
-			<string>5CD0F78D-686C-49A0-9113-C8119FA41A85</string>
+			<string>37375B36-6FBE-4DBF-95EA-A1C51674114F</string>
 		</dict>
-		<key>84209C26-34C4-4174-ADED-DFD41E800601</key>
+		<key>A5EB3A23-9B71-41AE-B708-5D448C812AE1</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -38,21 +38,21 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>84209C26-34C4-4174-ADED-DFD41E800601.xcactivitylog</string>
+			<string>A5EB3A23-9B71-41AE-B708-5D448C812AE1.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
 			<string>Pods-OpenWeatherMapApp-fasaqmdyhmrowqcsfgrrayfsocjd</string>
 			<key>timeStartedRecording</key>
-			<real>574918832.42010701</real>
+			<real>575243649.67299497</real>
 			<key>timeStoppedRecording</key>
-			<real>574918856.82737195</real>
+			<real>575243710.18018401</real>
 			<key>title</key>
 			<string>Build target Pods-OpenWeatherMapApp</string>
 			<key>uniqueIdentifier</key>
-			<string>84209C26-34C4-4174-ADED-DFD41E800601</string>
+			<string>A5EB3A23-9B71-41AE-B708-5D448C812AE1</string>
 		</dict>
-		<key>B95015AC-0E39-41F1-A032-E9B92007ECA9</key>
+		<key>E7220DB0-F721-4194-B704-CCF87D3623B9</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -61,19 +61,19 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>B95015AC-0E39-41F1-A032-E9B92007ECA9.xcactivitylog</string>
+			<string>E7220DB0-F721-4194-B704-CCF87D3623B9.xcactivitylog</string>
 			<key>highLevelStatus</key>
-			<string>W</string>
+			<string>S</string>
 			<key>signature</key>
 			<string>OpenWeatherMapApp-befwtncjmauuylfjlwhxraktwplb</string>
 			<key>timeStartedRecording</key>
-			<real>574919729.15758002</real>
+			<real>575244354.21745801</real>
 			<key>timeStoppedRecording</key>
-			<real>574919739.44146097</real>
+			<real>575244370.29714203</real>
 			<key>title</key>
 			<string>Build target OpenWeatherMapApp</string>
 			<key>uniqueIdentifier</key>
-			<string>B95015AC-0E39-41F1-A032-E9B92007ECA9</string>
+			<string>E7220DB0-F721-4194-B704-CCF87D3623B9</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
