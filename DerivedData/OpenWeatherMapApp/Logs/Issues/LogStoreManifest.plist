@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>37375B36-6FBE-4DBF-95EA-A1C51674114F</key>
+		<key>3321EAF7-DE3C-4CDD-95AE-06A9FE7DA0EE</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,21 +15,21 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>37375B36-6FBE-4DBF-95EA-A1C51674114F.xcactivitylog</string>
+			<string>3321EAF7-DE3C-4CDD-95AE-06A9FE7DA0EE.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
-			<string>Alamofire-fasaqmdyhmrowqcsfgrrayfsocjd</string>
+			<string>AlamofireImage-fasaqmdyhmrowqcsfgrrayfsocjd</string>
 			<key>timeStartedRecording</key>
-			<real>575243649.66248703</real>
+			<real>575303436.21836305</real>
 			<key>timeStoppedRecording</key>
-			<real>575243709.04051304</real>
+			<real>575303442.55010903</real>
 			<key>title</key>
-			<string>Build target Alamofire</string>
+			<string>Build target AlamofireImage</string>
 			<key>uniqueIdentifier</key>
-			<string>37375B36-6FBE-4DBF-95EA-A1C51674114F</string>
+			<string>3321EAF7-DE3C-4CDD-95AE-06A9FE7DA0EE</string>
 		</dict>
-		<key>A5EB3A23-9B71-41AE-B708-5D448C812AE1</key>
+		<key>3E8A4534-6797-4516-ABEF-693BF5B87023</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -38,21 +38,44 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>A5EB3A23-9B71-41AE-B708-5D448C812AE1.xcactivitylog</string>
+			<string>3E8A4534-6797-4516-ABEF-693BF5B87023.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
 			<string>Pods-OpenWeatherMapApp-fasaqmdyhmrowqcsfgrrayfsocjd</string>
 			<key>timeStartedRecording</key>
-			<real>575243649.67299497</real>
+			<real>575303442.15310705</real>
 			<key>timeStoppedRecording</key>
-			<real>575243710.18018401</real>
+			<real>575303442.86577702</real>
 			<key>title</key>
 			<string>Build target Pods-OpenWeatherMapApp</string>
 			<key>uniqueIdentifier</key>
-			<string>A5EB3A23-9B71-41AE-B708-5D448C812AE1</string>
+			<string>3E8A4534-6797-4516-ABEF-693BF5B87023</string>
 		</dict>
-		<key>E7220DB0-F721-4194-B704-CCF87D3623B9</key>
+		<key>67BF3B5A-E935-4E54-9534-A7638EEF70BE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>67BF3B5A-E935-4E54-9534-A7638EEF70BE.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>signature</key>
+			<string>Alamofire-fasaqmdyhmrowqcsfgrrayfsocjd</string>
+			<key>timeStartedRecording</key>
+			<real>575303427.04392302</real>
+			<key>timeStoppedRecording</key>
+			<real>575303437.36305904</real>
+			<key>title</key>
+			<string>Build target Alamofire</string>
+			<key>uniqueIdentifier</key>
+			<string>67BF3B5A-E935-4E54-9534-A7638EEF70BE</string>
+		</dict>
+		<key>94A28F73-8062-45FA-AF68-2AD0894C05E0</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -61,19 +84,19 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>E7220DB0-F721-4194-B704-CCF87D3623B9.xcactivitylog</string>
+			<string>94A28F73-8062-45FA-AF68-2AD0894C05E0.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
 			<string>OpenWeatherMapApp-befwtncjmauuylfjlwhxraktwplb</string>
 			<key>timeStartedRecording</key>
-			<real>575244354.21745801</real>
+			<real>575321134.01771295</real>
 			<key>timeStoppedRecording</key>
-			<real>575244370.29714203</real>
+			<real>575321250.22331095</real>
 			<key>title</key>
 			<string>Build target OpenWeatherMapApp</string>
 			<key>uniqueIdentifier</key>
-			<string>E7220DB0-F721-4194-B704-CCF87D3623B9</string>
+			<string>94A28F73-8062-45FA-AF68-2AD0894C05E0</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

@@ -42,7 +42,7 @@ class Weather {
         
         //from Key: Wind
         self.windSpeed = String(Double(truncating: wind["speed"] as! NSNumber))
-        if 
+        
         self.windDegree = String(Double(truncating: wind["deg"]! as! NSNumber))
         
         //from Key: Weather

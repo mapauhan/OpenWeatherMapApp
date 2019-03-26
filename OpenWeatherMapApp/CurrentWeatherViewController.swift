@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import AlamofireImage
 
 class CurrentWeatherViewController: UIViewController {
     
@@ -38,7 +39,7 @@ class CurrentWeatherViewController: UIViewController {
         
         print(url)
         
-        AF.request(url, method: HTTPMethod.post).responseJSON { response in
+        Alamofire.request(url, method: HTTPMethod.post).responseJSON { response in
             
             let weatherData = response.result.value as? [String:Any]
             self.locationLabel.text = "\(self.selectedCity!), \(self.selectedCountry!)"
