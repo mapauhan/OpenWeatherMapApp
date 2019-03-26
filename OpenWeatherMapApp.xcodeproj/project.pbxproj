@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D42107C6C8530CACB073069 /* Pods_OpenWeatherMapApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5772FD4AEA826FC069F6774 /* Pods_OpenWeatherMapApp.framework */; };
-		8CFC11112247193800A6AF5E /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFC11102247193800A6AF5E /* AppData.swift */; };
+		7C2A4123224ABB240091D3B9 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2A4122224ABB240091D3B9 /* AppData.swift */; };
 		8CFC111322471E8300A6AF5E /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFC111222471E8300A6AF5E /* weather.swift */; };
 		B92A5FB922431767003999B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92A5FB822431767003999B0 /* AppDelegate.swift */; };
 		B92A5FBB22431767003999B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92A5FBA22431767003999B0 /* ViewController.swift */; };
@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		04DD2725F659764277A101E1 /* Pods-OpenWeatherMapApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeatherMapApp.debug.xcconfig"; path = "Target Support Files/Pods-OpenWeatherMapApp/Pods-OpenWeatherMapApp.debug.xcconfig"; sourceTree = "<group>"; };
 		22A53F2E73BC0F7AA457AF8A /* Pods-OpenWeatherMapApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeatherMapApp.release.xcconfig"; path = "Target Support Files/Pods-OpenWeatherMapApp/Pods-OpenWeatherMapApp.release.xcconfig"; sourceTree = "<group>"; };
-		8CFC11102247193800A6AF5E /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppData.swift; path = /Users/lore/projects/swift/OpenWeatherMapApp/OpenWeatherMapApp/AppData.swift; sourceTree = "<absolute>"; };
+		7C2A4122224ABB240091D3B9 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppData.swift; path = ../../../AppData.swift; sourceTree = "<group>"; };
 		8CFC111222471E8300A6AF5E /* weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
 		A5772FD4AEA826FC069F6774 /* Pods_OpenWeatherMapApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenWeatherMapApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92A5FB522431767003999B0 /* OpenWeatherMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeatherMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +32,8 @@
 		B92A5FC22243176B003999B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B92A5FC42243176B003999B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B92A5FCC22446B49003999B0 /* CurrentWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewController.swift; sourceTree = "<group>"; };
+		F1D66893807045FE4FE4958E /* Pods-OpenWeatherMapApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeatherMapApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenWeatherMapApp/Pods-OpenWeatherMapApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F9BB31121FDAF087DD9F0734 /* Pods-OpenWeatherMapApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeatherMapApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenWeatherMapApp/Pods-OpenWeatherMapApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,7 @@
 		B92A5FB722431767003999B0 /* OpenWeatherMapApp */ = {
 			isa = PBXGroup;
 			children = (
-				8CFC11102247193800A6AF5E /* AppData.swift */,
+				7C2A4122224ABB240091D3B9 /* AppData.swift */,
 				B92A5FB822431767003999B0 /* AppDelegate.swift */,
 				B92A5FBA22431767003999B0 /* ViewController.swift */,
 				B92A5FBC22431767003999B0 /* Main.storyboard */,
@@ -93,6 +95,8 @@
 			children = (
 				04DD2725F659764277A101E1 /* Pods-OpenWeatherMapApp.debug.xcconfig */,
 				22A53F2E73BC0F7AA457AF8A /* Pods-OpenWeatherMapApp.release.xcconfig */,
+				F1D66893807045FE4FE4958E /* Pods-OpenWeatherMapApp.debug.xcconfig */,
+				F9BB31121FDAF087DD9F0734 /* Pods-OpenWeatherMapApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -171,15 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-OpenWeatherMapApp-checkManifestLockResult.txt",
 			);
@@ -193,21 +193,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OpenWeatherMapApp/Pods-OpenWeatherMapApp-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-OpenWeatherMapApp/Pods-OpenWeatherMapApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenWeatherMapApp/Pods-OpenWeatherMapApp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenWeatherMapApp/Pods-OpenWeatherMapApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -221,7 +219,7 @@
 				B92A5FBB22431767003999B0 /* ViewController.swift in Sources */,
 				B92A5FB922431767003999B0 /* AppDelegate.swift in Sources */,
 				B92A5FCD22446B49003999B0 /* CurrentWeatherViewController.swift in Sources */,
-				8CFC11112247193800A6AF5E /* AppData.swift in Sources */,
+				7C2A4123224ABB240091D3B9 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +363,7 @@
 		};
 		B92A5FC82243176B003999B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04DD2725F659764277A101E1 /* Pods-OpenWeatherMapApp.debug.xcconfig */;
+			baseConfigurationReference = F1D66893807045FE4FE4958E /* Pods-OpenWeatherMapApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -386,6 +384,7 @@
 		};
 		B92A5FC92243176B003999B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9BB31121FDAF087DD9F0734 /* Pods-OpenWeatherMapApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

@@ -40,7 +40,7 @@ class CurrentWeatherViewController: UIViewController {
         
         print(uri)
         
-        AF.request(uri, method: HTTPMethod.post, encoding: URLEncoding.default ).responseJSON { response in
+        Alamofire.request(uri, method: HTTPMethod.post, encoding: URLEncoding.default ).responseJSON { response in
             
             print(response.result.value)
             let data = response.result.value as? [String: Any]

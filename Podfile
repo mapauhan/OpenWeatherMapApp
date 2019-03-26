@@ -7,6 +7,7 @@ target 'OpenWeatherMapApp' do
 
   # Pods for OpenWeatherMapApp
 
-  pod 'Alamofire', '~> 5.0.0-beta.3'
+  pod 'Alamofire', '~> 4.8.1'
+  pod 'AlamofireImage', '~> 3.5.0'
 
 end
