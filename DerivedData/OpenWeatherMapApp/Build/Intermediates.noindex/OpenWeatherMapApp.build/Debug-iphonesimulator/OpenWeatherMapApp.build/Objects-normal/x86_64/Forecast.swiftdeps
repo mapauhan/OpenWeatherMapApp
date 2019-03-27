@@ -72,8 +72,10 @@ depends-member:
 - !private ["17OpenWeatherMapApp8ForecastC", "NSNumber"]
 - ["17OpenWeatherMapApp8ForecastC", "String"]
 - ["17OpenWeatherMapApp8ForecastC", "cloudy"]
+- ["17OpenWeatherMapApp8ForecastC", "descrip"]
 - ["17OpenWeatherMapApp8ForecastC", "dt_time"]
 - ["17OpenWeatherMapApp8ForecastC", "humidity"]
+- ["17OpenWeatherMapApp8ForecastC", "icon"]
 - ["17OpenWeatherMapApp8ForecastC", "init"]
 - ["17OpenWeatherMapApp8ForecastC", "maxTemp"]
 - ["17OpenWeatherMapApp8ForecastC", "minTemp"]
@@ -224,4 +226,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "16a8e5babdb565a9c6aecf7bb70dab55"
+interface-hash: "f89122189ba04b76d6aa5c9d50694806"

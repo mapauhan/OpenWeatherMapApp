@@ -22,8 +22,7 @@ class CustomCellTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        let cellNib = UINib.init(nibName: "forecastCell", bundle: nil)
-        //tableView.register(cellNib, forCellReuseIdentifier: "forecastCell" )
+     
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

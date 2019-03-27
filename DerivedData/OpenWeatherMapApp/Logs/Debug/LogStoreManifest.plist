@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>8DEF0687-6FC4-4A10-BE5B-24612672CCA4</key>
+		<key>200CF18A-821F-4EAB-AD37-A00B90448C35</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>8DEF0687-6FC4-4A10-BE5B-24612672CCA4.xcactivitylog</string>
+			<string>200CF18A-821F-4EAB-AD37-A00B90448C35.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,13 +27,42 @@
 			<key>signature</key>
 			<string>Debug OpenWeatherMapApp</string>
 			<key>timeStartedRecording</key>
-			<real>575356786.88205004</real>
+			<real>575411736.78270698</real>
 			<key>timeStoppedRecording</key>
-			<real>575356816.68078494</real>
+			<real>575411926.74498796</real>
 			<key>title</key>
 			<string>Debug OpenWeatherMapApp</string>
 			<key>uniqueIdentifier</key>
-			<string>8DEF0687-6FC4-4A10-BE5B-24612672CCA4</string>
+			<string>200CF18A-821F-4EAB-AD37-A00B90448C35</string>
+		</dict>
+		<key>B7295EE6-299E-4B16-82EB-9158E4D618FA</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B7295EE6-299E-4B16-82EB-9158E4D618FA.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>OpenWeatherMapApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>OpenWeatherMapApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug OpenWeatherMapApp</string>
+			<key>timeStartedRecording</key>
+			<real>575410171.68347204</real>
+			<key>timeStoppedRecording</key>
+			<real>575410449.74921596</real>
+			<key>title</key>
+			<string>Debug OpenWeatherMapApp</string>
+			<key>uniqueIdentifier</key>
+			<string>B7295EE6-299E-4B16-82EB-9158E4D618FA</string>
 		</dict>
 	</dict>
 </dict>

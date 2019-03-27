@@ -22,13 +22,17 @@ class CurrentWeatherViewController: UIViewController {
     @IBOutlet weak var windSpeed: UILabel!
     @IBOutlet weak var windDegree: UILabel!
     @IBOutlet weak var cloudyLabel: UILabel!
+    @IBOutlet weak var icon: UIImageView!
+    
     
     
     let BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
+    let IMAGE_URL = "http://openweathermap.org/img/w/"
     var API_KEY = "a10dbba30194931c77982e032457ec48"
     
     var selectedCity: String?
     var selectedCountry: String?
+    var iconId: String?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToForecast" {
@@ -43,10 +47,15 @@ class CurrentWeatherViewController: UIViewController {
         super.viewDidLoad()
         
         // This URL creates the URL for each city clicked on the tableview
-        let city = selectedCity!.replacingOccurrences(of: " ", with:"%20")
+        print(selectedCity)
+        var city = selectedCity!
+        if city != nil {
+            city = selectedCity!.replacingOccurrences(of: " ", with:"%20")
+        }
         let url = "\(String(describing: BASE_URL))?q=\(String(describing: city)),\(String(describing: selectedCountry!))&units=imperial&apikey=\(String(describing: API_KEY))"
         
         print(url)
+        
         
         Alamofire.request(url, method: HTTPMethod.post).responseJSON { response in
             
@@ -62,10 +71,30 @@ class CurrentWeatherViewController: UIViewController {
                 self.windSpeed.text = "\(String(describing: selection.windSpeed!))m/hr"
                 self.windDegree.text = "\(selection.windDegree!)Degrees"
                 self.cloudyLabel.text = "\(String(describing: selection.cloudy!))%"
+                self.iconId = selection.icon!
+                
+                
+                
+                let url = "\(String(describing: self.IMAGE_URL))\(String(describing:self.iconId!)).png"
+                print(url)
+          
+                Alamofire.request(url).responseImage { response in
+                    debugPrint(response)
+                    
+                    if let image = response.result.value {
+                        DispatchQueue.main.async {
+                            print("image downloaded: \(type(of: image))")
+                            self.icon.image = image
+                        }
+                       
+                }
+            }
 
+                
             }
             
         }
+    
     }
 }
 

@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>1B9AC0EB-397F-44F5-8D86-998AC5BBE6F9</key>
+		<key>0B487BAB-5311-4C72-9C31-74925E64D8D5</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,21 +15,21 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>1B9AC0EB-397F-44F5-8D86-998AC5BBE6F9.xcactivitylog</string>
+			<string>0B487BAB-5311-4C72-9C31-74925E64D8D5.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
-			<string>Pods-OpenWeatherMapApp-fasaqmdyhmrowqcsfgrrayfsocjd</string>
+			<string>Alamofire-fasaqmdyhmrowqcsfgrrayfsocjd</string>
 			<key>timeStartedRecording</key>
-			<real>575356198.77429795</real>
+			<real>575406017.33736205</real>
 			<key>timeStoppedRecording</key>
-			<real>575356261.28661799</real>
+			<real>575406041.87939405</real>
 			<key>title</key>
-			<string>Build target Pods-OpenWeatherMapApp</string>
+			<string>Build target Alamofire</string>
 			<key>uniqueIdentifier</key>
-			<string>1B9AC0EB-397F-44F5-8D86-998AC5BBE6F9</string>
+			<string>0B487BAB-5311-4C72-9C31-74925E64D8D5</string>
 		</dict>
-		<key>75154269-D036-4B18-92C3-7599C7893334</key>
+		<key>D6A93F46-BBC8-45C0-B218-6F6E1FFDEC2D</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -38,21 +38,21 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>75154269-D036-4B18-92C3-7599C7893334.xcactivitylog</string>
+			<string>D6A93F46-BBC8-45C0-B218-6F6E1FFDEC2D.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>W</string>
 			<key>signature</key>
 			<string>OpenWeatherMapApp-befwtncjmauuylfjlwhxraktwplb</string>
 			<key>timeStartedRecording</key>
-			<real>575356532.80697501</real>
+			<real>575410124.96354198</real>
 			<key>timeStoppedRecording</key>
-			<real>575356561.96529198</real>
+			<real>575410170.98123503</real>
 			<key>title</key>
 			<string>Build target OpenWeatherMapApp</string>
 			<key>uniqueIdentifier</key>
-			<string>75154269-D036-4B18-92C3-7599C7893334</string>
+			<string>D6A93F46-BBC8-45C0-B218-6F6E1FFDEC2D</string>
 		</dict>
-		<key>8633C38C-91BE-4F26-B441-AC5D54975787</key>
+		<key>DC22E1DB-9748-4F0A-8705-C4C4CCDDC5EC</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -61,21 +61,21 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>8633C38C-91BE-4F26-B441-AC5D54975787.xcactivitylog</string>
+			<string>DC22E1DB-9748-4F0A-8705-C4C4CCDDC5EC.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
-			<string>Alamofire-fasaqmdyhmrowqcsfgrrayfsocjd</string>
+			<string>Pods-OpenWeatherMapApp-fasaqmdyhmrowqcsfgrrayfsocjd</string>
 			<key>timeStartedRecording</key>
-			<real>575356198.76056504</real>
+			<real>575407920.64070201</real>
 			<key>timeStoppedRecording</key>
-			<real>575356239.99544597</real>
+			<real>575407920.66605306</real>
 			<key>title</key>
-			<string>Build target Alamofire</string>
+			<string>Build target Pods-OpenWeatherMapApp</string>
 			<key>uniqueIdentifier</key>
-			<string>8633C38C-91BE-4F26-B441-AC5D54975787</string>
+			<string>DC22E1DB-9748-4F0A-8705-C4C4CCDDC5EC</string>
 		</dict>
-		<key>9F81E0D0-E0DD-4010-96DF-985E21B604AB</key>
+		<key>DD93167F-BE38-45F3-A008-0604B6005964</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -84,19 +84,19 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>9F81E0D0-E0DD-4010-96DF-985E21B604AB.xcactivitylog</string>
+			<string>DD93167F-BE38-45F3-A008-0604B6005964.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
 			<string>AlamofireImage-fasaqmdyhmrowqcsfgrrayfsocjd</string>
 			<key>timeStartedRecording</key>
-			<real>575356198.76598406</real>
+			<real>575406017.32590997</real>
 			<key>timeStoppedRecording</key>
-			<real>575356260.41821301</real>
+			<real>575406055.63401401</real>
 			<key>title</key>
 			<string>Build target AlamofireImage</string>
 			<key>uniqueIdentifier</key>
-			<string>9F81E0D0-E0DD-4010-96DF-985E21B604AB</string>
+			<string>DD93167F-BE38-45F3-A008-0604B6005964</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

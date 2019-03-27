@@ -14,6 +14,8 @@ class Forecast {
     var maxTemp: String?
     var minTemp: String?
     var humidity: String?
+    var descrip: String?
+    var icon: String?
     var cloudy: String?
     
     init(_ dailyData: [String:Any]) {
@@ -22,11 +24,11 @@ class Forecast {
         let list = dailyData["list"] as! [[String:Any]]
             let main = list[0]["main"] as! [String:Any] //retrieves data into a dictionary
             let clouds = list[0]["clouds"] as! [String:Any]
-            let dt_txt = list[0]["dt_txt"] as! [String:Any]
+           // let dtTxt = list[0]["dt_txt"] as! [String:Any]
         
             let weatherArray = list[0]["weather"] as! [[String:Any]]
-            cloudy = weatherArray[0]["description"] as! String
-            //weatherArray[0]["id"] as! Int
+            let weather = weatherArray[0]["description"] as! String
+            let weatherIcon = weatherArray[0]["icon"] as! String
             
             
             
@@ -38,6 +40,10 @@ class Forecast {
             
             //from Key: Clouds
             self.cloudy = String(Int(truncating: clouds["all"] as! NSNumber))
+        
+            //from Key: Weather
+         //   self.descrip = weather["description"] as! String
+          //  self.icon = weatherIcon["icon"] as! String
             
         
     }

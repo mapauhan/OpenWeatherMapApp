@@ -48,7 +48,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Cities" id="hkg-rX-uys"/>
                     <connections>
-                        <segue destination="5tt-1Y-yev" kind="show" identifier="currentWeatherSegue" id="PbW-HF-jPM"/>
+                        <segue destination="5tt-1Y-yev" kind="show" identifier="currentWeatherSegue" id="TNI-Xc-VC0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -202,6 +202,7 @@
                         <outlet property="cloudyLabel" destination="98O-co-B1p" id="uro-Rv-oQA"/>
                         <outlet property="descLabel" destination="6E7-Xa-CQd" id="K9U-6C-K2a"/>
                         <outlet property="humidity" destination="R5N-NX-EW7" id="Rjf-S5-XZH"/>
+                        <outlet property="icon" destination="3ic-P8-r7b" id="MhC-hp-QpM"/>
                         <outlet property="locationLabel" destination="deR-dG-V1P" id="Fpd-RE-cju"/>
                         <outlet property="maxTemp" destination="3yC-2s-Upm" id="ME6-9E-9EL"/>
                         <outlet property="minTemp" destination="vQN-o2-yIA" id="LGj-ny-7iN"/>

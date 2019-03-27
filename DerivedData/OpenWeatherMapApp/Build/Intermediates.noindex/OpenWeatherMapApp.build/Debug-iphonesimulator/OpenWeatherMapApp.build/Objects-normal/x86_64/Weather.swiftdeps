@@ -115,6 +115,7 @@ depends-member:
 - ["17OpenWeatherMapApp0B0C", "deinit"]
 - ["17OpenWeatherMapApp0B0C", "descrip"]
 - ["17OpenWeatherMapApp0B0C", "humidity"]
+- ["17OpenWeatherMapApp0B0C", "icon"]
 - ["17OpenWeatherMapApp0B0C", "init"]
 - ["17OpenWeatherMapApp0B0C", "maxTemp"]
 - ["17OpenWeatherMapApp0B0C", "minTemp"]
@@ -247,4 +248,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ff76926c44ee4d1ee01024f92770b632"
+interface-hash: "0af0f3ee127e86501ff6ef261c78b9d4"

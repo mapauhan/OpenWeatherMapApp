@@ -20,6 +20,7 @@
 		B974EA462245DB4A007D6C0B /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B974EA452245DB4A007D6C0B /* Weather.swift */; };
 		B9AC0650224ABE0F00493D57 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AC064F224ABE0F00493D57 /* Forecast.swift */; };
 		B9AC0652224B24A800493D57 /* DailyData .swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AC0651224B24A800493D57 /* DailyData .swift */; };
+		B9D3E711224C0354009FA558 /* FiveDayForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D3E710224C0354009FA558 /* FiveDayForecast.swift */; };
 		B9F7971A224950F200844C04 /* WeatherForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F79719224950F200844C04 /* WeatherForecastViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		B974EA452245DB4A007D6C0B /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		B9AC064F224ABE0F00493D57 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		B9AC0651224B24A800493D57 /* DailyData .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyData .swift"; sourceTree = "<group>"; };
+		B9D3E710224C0354009FA558 /* FiveDayForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecast.swift; sourceTree = "<group>"; };
 		B9F79719224950F200844C04 /* WeatherForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				B9AC0651224B24A800493D57 /* DailyData .swift */,
 				B94139D4224B292B002FD0E3 /* CustomCellTableViewCell.swift */,
 				B94139D5224B292C002FD0E3 /* CustomCellTableViewCell.xib */,
+				B9D3E710224C0354009FA558 /* FiveDayForecast.swift */,
 			);
 			path = OpenWeatherMapApp;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				B9F7971A224950F200844C04 /* WeatherForecastViewController.swift in Sources */,
 				B94139D6224B292C002FD0E3 /* CustomCellTableViewCell.swift in Sources */,
 				B92A5FCB22431A8B003999B0 /* AppData.swift in Sources */,
+				B9D3E711224C0354009FA558 /* FiveDayForecast.swift in Sources */,
 				B92A5FCD22446B49003999B0 /* CurrentWeatherViewController.swift in Sources */,
 				B974EA462245DB4A007D6C0B /* Weather.swift in Sources */,
 			);

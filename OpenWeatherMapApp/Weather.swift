@@ -17,6 +17,7 @@ class Weather {
     var windSpeed:  String?
     var windDegree:  String?
     var cloudy: String?
+    var icon: String?
     
     init(_ Data: [String:Any]) {
        //saves data from OpenWeatherMap API
@@ -28,6 +29,7 @@ class Weather {
         
         let weatherArray = Data["weather"] as! [[String:Any]]
         let weather = weatherArray[0]["description"] as! String
+        let id = weatherArray[0]["icon"] as! String
         
        
         
@@ -47,6 +49,9 @@ class Weather {
         
         //from Key: Weather
         self.descrip = weather
+        self.icon = id
+        
+        
         
         
     }

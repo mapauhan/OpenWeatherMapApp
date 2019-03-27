@@ -85,8 +85,10 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "currentWeatherSegue" {
                 let destinationVC = segue.destination as! CurrentWeatherViewController
-                destinationVC.selectedCity = self.selectedCity
-                destinationVC.selectedCountry = self.selectedCountry
+                destinationVC.selectedCity = self.selectedCity!
+                
+                destinationVC.selectedCountry = self.selectedCountry!
+                
 
             }
     }

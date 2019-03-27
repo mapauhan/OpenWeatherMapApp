@@ -198,6 +198,7 @@ SWIFT_CLASS("_TtC17OpenWeatherMapApp11AppDelegate")
 @end
 
 @class UILabel;
+@class UIImageView;
 @class UIStoryboardSegue;
 @class NSBundle;
 @class NSCoder;
@@ -213,13 +214,13 @@ SWIFT_CLASS("_TtC17OpenWeatherMapApp28CurrentWeatherViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified windSpeed;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified windDegree;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified cloudyLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified icon;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
 
 SWIFT_CLASS("_TtC17OpenWeatherMapApp23CustomCellTableViewCell")
 @interface CustomCellTableViewCell : UITableViewCell

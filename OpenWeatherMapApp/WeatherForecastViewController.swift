@@ -17,13 +17,20 @@ class WeatherForecastViewController: UIViewController {
     
     var selectedCountry: String?
     var selectedCity: String = ""
+    var data: [DailyData] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //cellNib
+        let cellNib = UINib.init(nibName: "CustomCellTableViewCell", bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: "forecastCell" )
+        tableView.reloadData()
+        
         // let BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
         let FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast"
-        let IMG_URL = "http://openweathermap.org/img/w/10d.png"
+        let IMG_URL = "http://openweathermap.org/img/w/"
         var API_KEY = "a10dbba30194931c77982e032457ec48"
         
         let city = selectedCity
@@ -34,6 +41,7 @@ class WeatherForecastViewController: UIViewController {
         
         Alamofire.request(url, method: .post, parameters: nil).responseJSON { response in
             let forecastData = response.result.value as? [String:Any]
+            print(forecastData)
             // self.locationLabelF.text = "\(self.selectedCity!), \(self.selectedCountry!)"
             if forecastData != nil {
                 let selection = Forecast(forecastData!)
@@ -65,6 +73,7 @@ class WeatherForecastViewController: UIViewController {
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "forecastCell", for: indexPath) as! CustomCellTableViewCell
+            
             return cell
         }
 }

@@ -1,13 +1,14 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "67a386291cec6efcb04aa678e4e46b8d"
-build_time: [1553663734, 100601000]
+build_time: [1553717327, 398133000]
 inputs:
   "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/DailyData .swift": [1553657308, 0]
-  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/ViewController.swift": [1553655779, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/ViewController.swift": [1553673224, 0]
   "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/AppDelegate.swift": [1553129447, 0]
-  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/Forecast.swift": [1553663732, 0]
-  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/WeatherForecastViewController.swift": [1553661377, 0]
-  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/CustomCellTableViewCell.swift": [1553661042, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/Forecast.swift": [1553715112, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/WeatherForecastViewController.swift": [1553717316, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/CustomCellTableViewCell.swift": [1553717319, 0]
   "/Users/Maripau/Documents/Spring 2019/MobileApp /AppData.swift": [1553130431, 0]
-  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/CurrentWeatherViewController.swift": [1553655779, 0]
-  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/Weather.swift": [1553553421, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/FiveDayForecast.swift": [1553714354, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/CurrentWeatherViewController.swift": [1553711743, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/OpenWeatherMapApp/Weather.swift": [1553710743, 0]
