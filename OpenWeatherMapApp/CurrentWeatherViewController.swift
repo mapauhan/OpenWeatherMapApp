@@ -86,4 +86,12 @@ class CurrentWeatherViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let dest = segue.destination as! WeatherForecastViewController
+        dest.selectedCity = self.selectedCity ?? ""
+        dest.selectedCountry = self.selectedCountry ?? ""
+        
+    }
+    
 }
