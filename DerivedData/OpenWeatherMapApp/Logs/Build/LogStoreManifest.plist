@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>0C2F7C12-4EBB-4772-AE65-C8F519AFE96F</key>
+		<key>BC6A6F3C-705C-4170-B17C-45E0C2F44AEF</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,9 +15,9 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>0C2F7C12-4EBB-4772-AE65-C8F519AFE96F.xcactivitylog</string>
+			<string>BC6A6F3C-705C-4170-B17C-45E0C2F44AEF.xcactivitylog</string>
 			<key>highLevelStatus</key>
-			<string>E</string>
+			<string>W</string>
 			<key>schemeIdentifier-containerName</key>
 			<string>OpenWeatherMapApp project</string>
 			<key>schemeIdentifier-schemeName</key>
@@ -27,129 +27,13 @@
 			<key>signature</key>
 			<string>Build OpenWeatherMapApp</string>
 			<key>timeStartedRecording</key>
-			<real>575246221.217641</real>
+			<real>575356786.22254205</real>
 			<key>timeStoppedRecording</key>
-			<real>575246245.24300599</real>
+			<real>575356787.69137502</real>
 			<key>title</key>
 			<string>Build OpenWeatherMapApp</string>
 			<key>uniqueIdentifier</key>
-			<string>0C2F7C12-4EBB-4772-AE65-C8F519AFE96F</string>
-		</dict>
-		<key>3995E0AE-1186-4F70-AE99-35C2EEDA822B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>3995E0AE-1186-4F70-AE99-35C2EEDA822B.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>OpenWeatherMapApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>OpenWeatherMapApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build OpenWeatherMapApp</string>
-			<key>timeStartedRecording</key>
-			<real>575321132.31050098</real>
-			<key>timeStoppedRecording</key>
-			<real>575321251.12701094</real>
-			<key>title</key>
-			<string>Build OpenWeatherMapApp</string>
-			<key>uniqueIdentifier</key>
-			<string>3995E0AE-1186-4F70-AE99-35C2EEDA822B</string>
-		</dict>
-		<key>4D94A774-060A-4223-B91F-DD2926BED1B3</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4D94A774-060A-4223-B91F-DD2926BED1B3.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>E</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>OpenWeatherMapApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>OpenWeatherMapApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build OpenWeatherMapApp</string>
-			<key>timeStartedRecording</key>
-			<real>575303406.711133</real>
-			<key>timeStoppedRecording</key>
-			<real>575303409.29640698</real>
-			<key>title</key>
-			<string>Build OpenWeatherMapApp</string>
-			<key>uniqueIdentifier</key>
-			<string>4D94A774-060A-4223-B91F-DD2926BED1B3</string>
-		</dict>
-		<key>5EE9BE68-5CD2-4F1E-9814-8C0BF453B3ED</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>5EE9BE68-5CD2-4F1E-9814-8C0BF453B3ED.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>OpenWeatherMapApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>OpenWeatherMapApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Clean OpenWeatherMapApp</string>
-			<key>timeStartedRecording</key>
-			<real>575303396.36439705</real>
-			<key>timeStoppedRecording</key>
-			<real>575303396.77619004</real>
-			<key>title</key>
-			<string>Clean OpenWeatherMapApp</string>
-			<key>uniqueIdentifier</key>
-			<string>5EE9BE68-5CD2-4F1E-9814-8C0BF453B3ED</string>
-		</dict>
-		<key>B4CD00B3-C00C-41C9-8F47-6E94BEC6ED62</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>B4CD00B3-C00C-41C9-8F47-6E94BEC6ED62.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>OpenWeatherMapApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>OpenWeatherMapApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build OpenWeatherMapApp</string>
-			<key>timeStartedRecording</key>
-			<real>575303426.98331201</real>
-			<key>timeStoppedRecording</key>
-			<real>575303459.17437398</real>
-			<key>title</key>
-			<string>Build OpenWeatherMapApp</string>
-			<key>uniqueIdentifier</key>
-			<string>B4CD00B3-C00C-41C9-8F47-6E94BEC6ED62</string>
+			<string>BC6A6F3C-705C-4170-B17C-45E0C2F44AEF</string>
 		</dict>
 	</dict>
 </dict>

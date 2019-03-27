@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>3321EAF7-DE3C-4CDD-95AE-06A9FE7DA0EE</key>
+		<key>1B9AC0EB-397F-44F5-8D86-998AC5BBE6F9</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,67 +15,21 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>3321EAF7-DE3C-4CDD-95AE-06A9FE7DA0EE.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>signature</key>
-			<string>AlamofireImage-fasaqmdyhmrowqcsfgrrayfsocjd</string>
-			<key>timeStartedRecording</key>
-			<real>575303436.21836305</real>
-			<key>timeStoppedRecording</key>
-			<real>575303442.55010903</real>
-			<key>title</key>
-			<string>Build target AlamofireImage</string>
-			<key>uniqueIdentifier</key>
-			<string>3321EAF7-DE3C-4CDD-95AE-06A9FE7DA0EE</string>
-		</dict>
-		<key>3E8A4534-6797-4516-ABEF-693BF5B87023</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>3E8A4534-6797-4516-ABEF-693BF5B87023.xcactivitylog</string>
+			<string>1B9AC0EB-397F-44F5-8D86-998AC5BBE6F9.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
 			<string>Pods-OpenWeatherMapApp-fasaqmdyhmrowqcsfgrrayfsocjd</string>
 			<key>timeStartedRecording</key>
-			<real>575303442.15310705</real>
+			<real>575356198.77429795</real>
 			<key>timeStoppedRecording</key>
-			<real>575303442.86577702</real>
+			<real>575356261.28661799</real>
 			<key>title</key>
 			<string>Build target Pods-OpenWeatherMapApp</string>
 			<key>uniqueIdentifier</key>
-			<string>3E8A4534-6797-4516-ABEF-693BF5B87023</string>
+			<string>1B9AC0EB-397F-44F5-8D86-998AC5BBE6F9</string>
 		</dict>
-		<key>67BF3B5A-E935-4E54-9534-A7638EEF70BE</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>67BF3B5A-E935-4E54-9534-A7638EEF70BE.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>signature</key>
-			<string>Alamofire-fasaqmdyhmrowqcsfgrrayfsocjd</string>
-			<key>timeStartedRecording</key>
-			<real>575303427.04392302</real>
-			<key>timeStoppedRecording</key>
-			<real>575303437.36305904</real>
-			<key>title</key>
-			<string>Build target Alamofire</string>
-			<key>uniqueIdentifier</key>
-			<string>67BF3B5A-E935-4E54-9534-A7638EEF70BE</string>
-		</dict>
-		<key>94A28F73-8062-45FA-AF68-2AD0894C05E0</key>
+		<key>75154269-D036-4B18-92C3-7599C7893334</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -84,19 +38,65 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>94A28F73-8062-45FA-AF68-2AD0894C05E0.xcactivitylog</string>
+			<string>75154269-D036-4B18-92C3-7599C7893334.xcactivitylog</string>
 			<key>highLevelStatus</key>
-			<string>S</string>
+			<string>W</string>
 			<key>signature</key>
 			<string>OpenWeatherMapApp-befwtncjmauuylfjlwhxraktwplb</string>
 			<key>timeStartedRecording</key>
-			<real>575321134.01771295</real>
+			<real>575356532.80697501</real>
 			<key>timeStoppedRecording</key>
-			<real>575321250.22331095</real>
+			<real>575356561.96529198</real>
 			<key>title</key>
 			<string>Build target OpenWeatherMapApp</string>
 			<key>uniqueIdentifier</key>
-			<string>94A28F73-8062-45FA-AF68-2AD0894C05E0</string>
+			<string>75154269-D036-4B18-92C3-7599C7893334</string>
+		</dict>
+		<key>8633C38C-91BE-4F26-B441-AC5D54975787</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>8633C38C-91BE-4F26-B441-AC5D54975787.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>signature</key>
+			<string>Alamofire-fasaqmdyhmrowqcsfgrrayfsocjd</string>
+			<key>timeStartedRecording</key>
+			<real>575356198.76056504</real>
+			<key>timeStoppedRecording</key>
+			<real>575356239.99544597</real>
+			<key>title</key>
+			<string>Build target Alamofire</string>
+			<key>uniqueIdentifier</key>
+			<string>8633C38C-91BE-4F26-B441-AC5D54975787</string>
+		</dict>
+		<key>9F81E0D0-E0DD-4010-96DF-985E21B604AB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>9F81E0D0-E0DD-4010-96DF-985E21B604AB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>signature</key>
+			<string>AlamofireImage-fasaqmdyhmrowqcsfgrrayfsocjd</string>
+			<key>timeStartedRecording</key>
+			<real>575356198.76598406</real>
+			<key>timeStoppedRecording</key>
+			<real>575356260.41821301</real>
+			<key>title</key>
+			<string>Build target AlamofireImage</string>
+			<key>uniqueIdentifier</key>
+			<string>9F81E0D0-E0DD-4010-96DF-985E21B604AB</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

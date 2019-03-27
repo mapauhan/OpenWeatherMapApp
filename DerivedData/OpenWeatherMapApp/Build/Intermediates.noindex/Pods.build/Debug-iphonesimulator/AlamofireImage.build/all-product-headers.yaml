@@ -1,0 +1,87 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Alamofire-Swift.h",
+          'external-contents': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Alamofire-umbrella.h",
+          'external-contents': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Alamofire.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "AlamofireImage-Swift.h",
+          'external-contents': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "AlamofireImage-umbrella.h",
+          'external-contents': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/Pods/Target Support Files/AlamofireImage/AlamofireImage-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/AlamofireImage.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Products/Debug-iphonesimulator/Pods_OpenWeatherMapApp.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-OpenWeatherMapApp-umbrella.h",
+          'external-contents': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/Pods/Target Support Files/Pods-OpenWeatherMapApp/Pods-OpenWeatherMapApp-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_OpenWeatherMapApp-Swift.h",
+          'external-contents': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Products/Debug-iphonesimulator/Pods_OpenWeatherMapApp.framework/Headers/Pods_OpenWeatherMapApp-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Products/Debug-iphonesimulator/Pods_OpenWeatherMapApp.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Pods-OpenWeatherMapApp.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

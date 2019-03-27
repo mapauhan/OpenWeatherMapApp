@@ -30,6 +30,15 @@ class CurrentWeatherViewController: UIViewController {
     var selectedCity: String?
     var selectedCountry: String?
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToForecast" {
+            let destinationVC = segue.destination as! WeatherForecastViewController
+            destinationVC.selectedCity = self.selectedCity ?? ""
+            destinationVC.selectedCountry = self.selectedCountry ?? ""
+        }
+    }
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,37 +62,13 @@ class CurrentWeatherViewController: UIViewController {
                 self.windSpeed.text = "\(String(describing: selection.windSpeed!))m/hr"
                 self.windDegree.text = "\(selection.windDegree!)Degrees"
                 self.cloudyLabel.text = "\(String(describing: selection.cloudy!))%"
-                
-                
-                
-                
-                //            }
-                //
-                //            let main = weatherData["main"] as! [String:Any]
-                //
-                //            //key: main for values temp, maxTemp, minTemp, humidity
-                //            let temp = main["temp"]!
-                //            print(temp)
-                //
-                //
-                //            let wind = weatherData["wind"] as! [String:Any]
-                //
-                //            let windData = wind["speed"]!
-                //                            wind["deg"]
-                
-                //let clouds = weatherData["clouds"] as [String:Any]
-                
-                // let cloudy = clouds["all"]
-                
-                // self.tempLabel.text = temp as! String
-                
-                //            self.maxTemp.text = (main["temp_max"]! as! String)
-                //            self.minTemp.text = (main["temp_min"]! as! String)
-                //            self.humidity.text = (main["humidity"]! as! String)
-                //
+
             }
             
         }
     }
-    
 }
+
+
+
+

@@ -1,0 +1,13 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "744b1c339a86f8e701118c369a6a1751"
+build_time: [1553663440, 50576000]
+inputs:
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/Pods/AlamofireImage/Source/AFIError.swift": [1553553180, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/Pods/AlamofireImage/Source/Image.swift": [1553553180, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/Pods/AlamofireImage/Source/ImageCache.swift": [1553553180, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/Pods/AlamofireImage/Source/ImageDownloader.swift": [1553553180, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/Pods/AlamofireImage/Source/ImageFilter.swift": [1553553180, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/Pods/AlamofireImage/Source/Request+AlamofireImage.swift": [1553553180, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/Pods/AlamofireImage/Source/UIButton+AlamofireImage.swift": [1553553180, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/Pods/AlamofireImage/Source/UIImage+AlamofireImage.swift": [1553553180, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/Pods/AlamofireImage/Source/UIImageView+AlamofireImage.swift": [1553553180, 0]

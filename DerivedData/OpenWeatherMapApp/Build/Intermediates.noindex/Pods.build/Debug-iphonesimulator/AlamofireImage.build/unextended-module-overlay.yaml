@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/Maripau/Documents/Spring 2019/MobileApp /OpenWeatherMapApp/DerivedData/OpenWeatherMapApp/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/AlamofireImage.build/unextended-module.modulemap",
+    }]
+  }]
+}

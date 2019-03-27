@@ -28,20 +28,6 @@ class ViewController: UIViewController {
         
         print(countries)
         
-//        let parameters: Parameters = [
-//            "q": "\(data) \(countries)", //q=city,country
-//        "units": "imperial",
-//        "appid": API_KEY]
-
-//        AF.request(BASE_URL, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON(completionHandler: {(response) in
-//            if response.result.isSuccess {
-//                print("success")
-//                print(response.result.value!)
-//            } else {
-//                print("error")
-//            }
-//        })
-        
         
     }
 
