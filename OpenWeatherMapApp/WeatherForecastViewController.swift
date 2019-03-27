@@ -52,14 +52,30 @@ class WeatherForecastViewController: UIViewController, UITableViewDelegate, UITa
             debugPrint(response.result)
             
             if let image = response.result.value {
-                print("image downloaded: \(image)")
+                print("image downloaded: \(type(of: image))")
             }
         }
+        
+        let imageCache = AutoPurgingImageCache()
+        
+        let urlRequest = URLRequest(url: URL(string: "https://httpbin.org/image/png")!)
+        let avatarImage = UIImage(named: "avatar")!.af_imageRoundedIntoCircle()
+        
+        // Add
+        imageCache.add(avatarImage, for: urlRequest, withIdentifier: "circle")
+        
+        // Fetch
+        let cachedAvatarImage = imageCache.image(for: urlRequest, withIdentifier: "circle")
+        
+        
         
         Alamofire.request(url, method: HTTPMethod.post).responseJSON { response in
             
             let weatherData = response.result.value as? [String:Any]
             
+            let avatar = imageCache.image(withIdentifier: "avatar")
+            
+            //var weatherIcon: UIImage(
             print(weatherData)
             //            self.locationLabel.text = "\(self.selectedCity!), \(self.selectedCountry!)"
             //            if weatherData != nil{

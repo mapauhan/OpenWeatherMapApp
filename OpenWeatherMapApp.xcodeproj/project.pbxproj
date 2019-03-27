@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0D42107C6C8530CACB073069 /* Pods_OpenWeatherMapApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5772FD4AEA826FC069F6774 /* Pods_OpenWeatherMapApp.framework */; };
 		7C22C462224ADDC200368555 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C22C461224ADDC200368555 /* AppData.swift */; };
+		7C22C465224B2D1600368555 /* CustomCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C22C463224B2D1600368555 /* CustomCell1.swift */; };
+		7C22C466224B2D1600368555 /* CustomCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C22C464224B2D1600368555 /* CustomCell1.xib */; };
 		B92A5FB922431767003999B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92A5FB822431767003999B0 /* AppDelegate.swift */; };
 		B92A5FBB22431767003999B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92A5FBA22431767003999B0 /* ViewController.swift */; };
 		B92A5FBE22431767003999B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92A5FBC22431767003999B0 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		22A53F2E73BC0F7AA457AF8A /* Pods-OpenWeatherMapApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeatherMapApp.release.xcconfig"; path = "Target Support Files/Pods-OpenWeatherMapApp/Pods-OpenWeatherMapApp.release.xcconfig"; sourceTree = "<group>"; };
 		4BEC49A8694A34249440B816 /* Pods-OpenWeatherMapApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeatherMapApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenWeatherMapApp/Pods-OpenWeatherMapApp.release.xcconfig"; sourceTree = "<group>"; };
 		7C22C461224ADDC200368555 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		7C22C463224B2D1600368555 /* CustomCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell1.swift; sourceTree = "<group>"; };
+		7C22C464224B2D1600368555 /* CustomCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell1.xib; sourceTree = "<group>"; };
 		A5772FD4AEA826FC069F6774 /* Pods_OpenWeatherMapApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenWeatherMapApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92A5FB522431767003999B0 /* OpenWeatherMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeatherMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92A5FB822431767003999B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				B92A5FB822431767003999B0 /* AppDelegate.swift */,
 				B92A5FBA22431767003999B0 /* ViewController.swift */,
 				B92A5FBC22431767003999B0 /* Main.storyboard */,
+				7C22C463224B2D1600368555 /* CustomCell1.swift */,
+				7C22C464224B2D1600368555 /* CustomCell1.xib */,
 				B92A5FBF2243176B003999B0 /* Assets.xcassets */,
 				B92A5FC12243176B003999B0 /* LaunchScreen.storyboard */,
 				B92A5FC42243176B003999B0 /* Info.plist */,
@@ -164,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C22C466224B2D1600368555 /* CustomCell1.xib in Resources */,
 				B92A5FC32243176B003999B0 /* LaunchScreen.storyboard in Resources */,
 				B92A5FC02243176B003999B0 /* Assets.xcassets in Resources */,
 				B92A5FBE22431767003999B0 /* Main.storyboard in Resources */,
@@ -219,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B92A5FBB22431767003999B0 /* ViewController.swift in Sources */,
+				7C22C465224B2D1600368555 /* CustomCell1.swift in Sources */,
 				B92A5FB922431767003999B0 /* AppDelegate.swift in Sources */,
 				B9F7971A224950F200844C04 /* WeatherForecastViewController.swift in Sources */,
 				B92A5FCD22446B49003999B0 /* CurrentWeatherViewController.swift in Sources */,

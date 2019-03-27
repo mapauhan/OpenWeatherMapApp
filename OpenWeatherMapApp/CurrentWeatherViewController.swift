@@ -23,19 +23,26 @@ class CurrentWeatherViewController: UIViewController {
     @IBOutlet weak var windDegree: UILabel!
     @IBOutlet weak var cloudyLabel: UILabel!
     
+    @IBOutlet weak var imgIcon: UIImageView!
     
     let BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
+    let IMAGE_URL = "http://openweathermap.org/img/w/"
     var API_KEY = "a10dbba30194931c77982e032457ec48"
     
     var selectedCity: String?
     var selectedCountry: String?
+    var iconId: String?
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // This URL creates the URL for each city clicked on the tableview
         let city = selectedCity!.replacingOccurrences(of: " ", with:"%20")
+        
         let url = "\(String(describing: BASE_URL))?q=\(String(describing: city)),\(String(describing: selectedCountry!))&units=imperial&apikey=\(String(describing: API_KEY))"
+        
         
         print(url)
         
@@ -53,6 +60,11 @@ class CurrentWeatherViewController: UIViewController {
                 self.windSpeed.text = "\(String(describing: selection.windSpeed!))m/hr"
                 self.windDegree.text = "\(selection.windDegree!)Degrees"
                 self.cloudyLabel.text = "\(String(describing: selection.cloudy!))%"
+                
+                self.iconId = selection.icon ?? "20n"
+                
+                
+                
                 
                 
                 
@@ -83,6 +95,35 @@ class CurrentWeatherViewController: UIViewController {
                 //
             }
             
+        }
+
+        
+        let imageCache = AutoPurgingImageCache()
+        //let urlString = "http://openweathermap.org/img/w/10d.png"
+        
+        let urlString = "\(String(describing: IMAGE_URL))\(self.iconId).png"
+        
+        //let urlRequest = URLRequest(url: URL(urlString))
+        
+        print(urlString)
+        
+        // Add
+        //imageCache.add(avatarImage, for: urlRequest, withIdentifier: "circle")
+        
+        // Fetch
+        //let cachedAvatarImage = imageCache.image(for: urlRequest, withIdentifier: "circle")
+        
+        
+        Alamofire.request(urlString).responseImage { response in
+            debugPrint(response)
+            
+            if let image = response.result.value {
+                //DispatchQueue.main.async {
+                    print("image downloaded: \(type(of: image))")
+                    self.imgIcon.image = image
+                //}
+                
+            }
         }
     }
     
