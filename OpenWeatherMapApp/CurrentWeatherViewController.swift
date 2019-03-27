@@ -31,9 +31,7 @@ class CurrentWeatherViewController: UIViewController {
     
     var selectedCity: String?
     var selectedCountry: String?
-    var iconId: String?
-    
-    
+    var iconId: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,9 +40,6 @@ class CurrentWeatherViewController: UIViewController {
         let city = selectedCity!.replacingOccurrences(of: " ", with:"%20")
         
         let url = "\(String(describing: BASE_URL))?q=\(String(describing: city)),\(String(describing: selectedCountry!))&units=imperial&apikey=\(String(describing: API_KEY))"
-        
-        
-        print(url)
         
         Alamofire.request(url, method: HTTPMethod.post).responseJSON { response in
             
@@ -60,75 +55,25 @@ class CurrentWeatherViewController: UIViewController {
                 self.windSpeed.text = "\(String(describing: selection.windSpeed!))m/hr"
                 self.windDegree.text = "\(selection.windDegree!)Degrees"
                 self.cloudyLabel.text = "\(String(describing: selection.cloudy!))%"
+                self.iconId = selection.icon ?? "01d"
                 
-                self.iconId = selection.icon ?? "20n"
-                
-                
-                
-                
-                
-                
-                
-                //            }
-                //
-                //            let main = weatherData["main"] as! [String:Any]
-                //
-                //            //key: main for values temp, maxTemp, minTemp, humidity
-                //            let temp = main["temp"]!
-                //            print(temp)
-                //
-                //
-                //            let wind = weatherData["wind"] as! [String:Any]
-                //
-                //            let windData = wind["speed"]!
-                //                            wind["deg"]
-                
-                //let clouds = weatherData["clouds"] as [String:Any]
-                
-                // let cloudy = clouds["all"]
-                
-                // self.tempLabel.text = temp as! String
-                
-                //            self.maxTemp.text = (main["temp_max"]! as! String)
-                //            self.minTemp.text = (main["temp_min"]! as! String)
-                //            self.humidity.text = (main["humidity"]! as! String)
-                //
             }
             
-        }
-
-        
-        let imageCache = AutoPurgingImageCache()
-        //let urlString = "http://openweathermap.org/img/w/10d.png"
-        
-        let urlString = "\(String(describing: IMAGE_URL))\(self.iconId).png"
-        
-        //let urlRequest = URLRequest(url: URL(urlString))
-        
-        print(urlString)
-        
-        // Add
-        //imageCache.add(avatarImage, for: urlRequest, withIdentifier: "circle")
-        
-        // Fetch
-        //let cachedAvatarImage = imageCache.image(for: urlRequest, withIdentifier: "circle")
-        
-        
-        Alamofire.request(urlString).responseImage { response in
-            debugPrint(response)
+            let urlString = "\(String(describing: self.IMAGE_URL))\(String(describing: self.iconId!)).png?apikey=\(self.API_KEY)"
             
-            if let image = response.result.value {
-                //DispatchQueue.main.async {
-                    print("image downloaded: \(type(of: image))")
-                    self.imgIcon.image = image
-                //}
+            Alamofire.request(urlString).responseImage { response in
+                debugPrint(response)
                 
+                if let image = response.result.value {
+                    DispatchQueue.main.async {
+                        self.imgIcon.image = image
+                    }
+                }
             }
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         let dest = segue.destination as! WeatherForecastViewController
         dest.selectedCity = self.selectedCity ?? ""
         dest.selectedCountry = self.selectedCountry ?? ""

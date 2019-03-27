@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Weather {
     var temp:  String?
@@ -50,8 +51,8 @@ class Weather {
         self.windDegree = String(Double(truncating: wind["deg"]! as! NSNumber))
         
         //from Key: Weather
-        self.descrip = weather
-        self.icon = weatherIcon
+        self.descrip = weather as String
+        self.icon = weatherIcon as String
         
         
         print ("self.icon = \(self.icon!)")
