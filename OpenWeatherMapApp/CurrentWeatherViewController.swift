@@ -25,6 +25,7 @@ class CurrentWeatherViewController: UIViewController {
     @IBOutlet weak var icon: UIImageView!
     
     
+    @IBOutlet weak var imgIcon: UIImageView!
     
     let BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
     let IMAGE_URL = "http://openweathermap.org/img/w/"

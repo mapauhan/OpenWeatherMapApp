@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Weather {
     var temp:  String?
@@ -18,6 +19,7 @@ class Weather {
     var windDegree:  String?
     var cloudy: String?
     var icon: String?
+    
     
     init(_ Data: [String:Any]) {
        //saves data from OpenWeatherMap API

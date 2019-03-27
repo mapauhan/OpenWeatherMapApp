@@ -24,11 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         countries.append(contentsOf: data.keys)
-        print(data)
-        
-        print(countries)
-        
-        
+    
     }
 
         //data divided into two (2) sections Country and City
