@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 class Weather {
     var temp:  String?
@@ -19,6 +18,8 @@ class Weather {
     var windDegree:  String?
     var cloudy: String?
     var icon: String?
+    var dtTime: String?
+    
     
     
     init(_ Data: [String:Any]) {
@@ -32,6 +33,8 @@ class Weather {
         let weatherArray = Data["weather"] as! [[String:Any]]
         let weather = weatherArray[0]["description"] as! String
         let weatherIcon = weatherArray[0]["icon"] as! String
+        let dt = Data["dt_txt"]
+        
         
         
        
@@ -60,5 +63,15 @@ class Weather {
         
         
         
+    }
+}
+
+class Forecast {
+    
+    var forecastList: [[String:Any]]
+    
+    init(_ dailyData: [String:Any]) {
+        print("dailyData = \(dailyData)")
+        self.forecastList = dailyData["list"] as! [[String:Any]]
     }
 }

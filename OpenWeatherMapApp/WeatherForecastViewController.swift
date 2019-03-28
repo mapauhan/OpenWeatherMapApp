@@ -10,7 +10,10 @@ import UIKit
 import Alamofire
 import AlamofireImage
 
-class WeatherForecastViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class WeatherForecastViewController: UIViewController {
+    
+    @IBOutlet weak var tableview: UITableView!
+    
     
     let BASE_URL = "http://api.openweathermap.org/data/2.5/forecast"
     let IMAGE_URL = "https://httpbin.org/image/png"
@@ -19,19 +22,17 @@ class WeatherForecastViewController: UIViewController, UITableViewDelegate, UITa
     
     var selectedCity: String?
     var selectedCountry: String?
+    var fc: Forecast?
+    var imgIcon: UIImage!
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "forecastCell", for: indexPath)
-        return cell
-    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let celNib = UINib(nibName: "CustomCell1", bundle: nil)
+        tableview.register(celNib, forCellReuseIdentifier: "CustomCell1")
         
         // preparing and settig request
         let city = selectedCity!.replacingOccurrences(of: " ", with:"%20")
@@ -44,35 +45,40 @@ class WeatherForecastViewController: UIViewController, UITableViewDelegate, UITa
         
         
         
-        Alamofire.request(img_url).responseImage { response in
-            debugPrint(response)
+        Alamofire.request(url, method: HTTPMethod.post ).responseJSON { response in
             
-            if let image = response.result.value {
-                print("image downloaded: \(type(of: image))")
+            let rs = response.result.value as! [String:Any]
+            self.fc = Forecast(rs)
+            
+            if self.fc != nil{
+                
+//                let selection = Forecast(weatherData![)
+//
+//                self.tempLabel.text = "\(String(describing: selection.temp!))F"
+//                self.maxTemp.text = "\(String(describing: selection.maxTemp!))F"
+//                self.minTemp.text = "\(String(describing: selection.minTemp!))F"
+//                self.humidity.text = "\(String(describing: selection.humidity!))%"
+//                self.descLabel.text = selection.descrip
+//                self.windSpeed.text = "\(String(describing: selection.windSpeed!))m/hr"
+//                self.windDegree.text = "\(selection.windDegree!)Degrees"
+//                self.cloudyLabel.text = "\(String(describing: selection.cloudy!))%"
+//                self.iconId = selection.icon ?? "01d"
+ 
+//                Alamofire.request(img_url).responseImage { response in
+//                    debugPrint(response)
+//
+//                    if let image = response.result.value {
+//                        DispatchQueue.main.async {
+//                            self.imgIcon.image = image
+//                        }
+//                    }
+//                }
+
             }
-        }
-//
-//        let imageCache = AutoPurgingImageCache()
-//
-//        let urlRequest = URLRequest(url: URL(string: "https://httpbin.org/image/png")!)
-//        let avatarImage = UIImage(named: "avatar")!.af_imageRoundedIntoCircle()
-//
-//        // Add
-//        imageCache.add(avatarImage, for: urlRequest, withIdentifier: "circle")
-//
-//        // Fetch
-//        let cachedAvatarImage = imageCache.image(for: urlRequest, withIdentifier: "circle")
-        
-        
-        
-        Alamofire.request(url, method: HTTPMethod.post).responseJSON { response in
+
             
-            let weatherData = response.result.value as? [String:Any]
+
             
-//            let avatar = imageCache.image(withIdentifier: "avatar")
-            
-            //var weatherIcon: UIImage(
-            print(weatherData)
             //            self.locationLabel.text = "\(self.selectedCity!), \(self.selectedCountry!)"
             //            if weatherData != nil{
             //                let selection = Weather(weatherData!)
@@ -118,3 +124,29 @@ class WeatherForecastViewController: UIViewController, UITableViewDelegate, UITa
 }
 
 
+extension WeatherForecastViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if self.fc == nil {
+            return 5
+        } else {
+            return self.fc!.forecastList.count
+        }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell1",
+                                                 for: indexPath) as! CustomCell1
+        
+        return cell
+    }
+
+    
+    
+}
+
+extension WeatherForecastViewController: UITableViewDelegate {
+    
+}

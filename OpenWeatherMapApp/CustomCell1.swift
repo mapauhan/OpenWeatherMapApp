@@ -20,7 +20,7 @@ class CustomCell1: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        print("in CustomCell")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

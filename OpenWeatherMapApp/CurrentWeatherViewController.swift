@@ -41,21 +41,24 @@ class CurrentWeatherViewController: UIViewController {
         
         let url = "\(String(describing: BASE_URL))?q=\(String(describing: city)),\(String(describing: selectedCountry!))&units=imperial&apikey=\(String(describing: API_KEY))"
         
-        Alamofire.request(url, method: HTTPMethod.post).responseJSON { response in
+        Alamofire.request(url, method: HTTPMethod.post).responseJSON { (response) in
             
-            let weatherData = response.result.value as? [String:Any]
-            self.locationLabel.text = "\(self.selectedCity!), \(self.selectedCountry!)"
-            if weatherData != nil{
-                let selection = Weather(weatherData!) 
-                self.tempLabel.text = "\(String(describing: selection.temp!))F"
-                self.maxTemp.text = "\(String(describing: selection.maxTemp!))F"
-                self.minTemp.text = "\(String(describing: selection.minTemp!))F"
-                self.humidity.text = "\(String(describing: selection.humidity!))%"
-                self.descLabel.text = selection.descrip
-                self.windSpeed.text = "\(String(describing: selection.windSpeed!))m/hr"
-                self.windDegree.text = "\(selection.windDegree!)Degrees"
-                self.cloudyLabel.text = "\(String(describing: selection.cloudy!))%"
-                self.iconId = selection.icon ?? "01d"
+            if response.result.isSuccess {
+                let weatherData = response.result.value as? [String:Any]
+                self.locationLabel.text = "\(self.selectedCity!), \(self.selectedCountry!)"
+                if weatherData != nil{
+                    let selection = Weather(weatherData!)
+                    self.tempLabel.text = "\(String(describing: selection.temp!))F"
+                    self.maxTemp.text = "\(String(describing: selection.maxTemp!))F"
+                    self.minTemp.text = "\(String(describing: selection.minTemp!))F"
+                    self.humidity.text = "\(String(describing: selection.humidity!))%"
+                    self.descLabel.text = selection.descrip
+                    self.windSpeed.text = "\(String(describing: selection.windSpeed!))m/hr"
+                    self.windDegree.text = "\(selection.windDegree!)Degrees"
+                    self.cloudyLabel.text = "\(String(describing: selection.cloudy!))%"
+                    self.iconId = selection.icon ?? "01d"
+                    
+                }
                 
             }
             
