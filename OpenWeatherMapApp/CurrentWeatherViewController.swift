@@ -65,7 +65,7 @@ class CurrentWeatherViewController: UIViewController {
             let urlString = "\(String(describing: self.IMAGE_URL))\(String(describing: self.iconId!)).png?apikey=\(self.API_KEY)"
             
             Alamofire.request(urlString).responseImage { response in
-                debugPrint(response)
+                print(self.iconId!)
                 
                 if let image = response.result.value {
                     DispatchQueue.main.async {

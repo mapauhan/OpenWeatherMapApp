@@ -18,6 +18,8 @@ class CustomCell1: UITableViewCell {
     @IBOutlet weak var lblHumidity: UILabel!
     @IBOutlet weak var lblCloudy: UILabel!
     
+    @IBOutlet weak var imgIcon: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         print("in CustomCell")

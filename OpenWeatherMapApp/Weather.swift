@@ -15,7 +15,7 @@ class Weather {
     var descrip:  String?
     var humidity:  String?
     var windSpeed:  String?
-    var windDegree:  String?
+    var windDegree: String?
     var cloudy: String?
     var icon: String?
     var dtTime: String?
@@ -24,6 +24,7 @@ class Weather {
     
     init(_ Data: [String:Any]) {
        //saves data from OpenWeatherMap API
+        print ("Data = \(Data)")
         
         let main = Data["main"] as! NSDictionary //retrieves data into a dictionary
         let clouds = Data["clouds"] as! [String:Any]
@@ -33,11 +34,9 @@ class Weather {
         let weatherArray = Data["weather"] as! [[String:Any]]
         let weather = weatherArray[0]["description"] as! String
         let weatherIcon = weatherArray[0]["icon"] as! String
-        let dt = Data["dt_txt"]
         
         
-        
-       
+        let dtTime = Data["dt_txt"] ?? ""
         
         //from Key: Main
         self.temp =  String(Double(truncating: main["temp"] as! NSNumber))
@@ -51,7 +50,11 @@ class Weather {
         //from Key: Wind
         self.windSpeed = String(Double(truncating: wind["speed"] as! NSNumber))
         
-        self.windDegree = String(Double(truncating: wind["deg"]! as! NSNumber))
+        if wind["deg"] != nil {
+            self.windDegree = String(Double(truncating: wind["deg"] as! NSNumber))
+        } else {
+            self.windDegree = "0"
+        }
         
         //from Key: Weather
         self.descrip = weather as String
